@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
  */
-public class FirefoxSelenium {
+public class FireFoxSelenium {
 
     // instance variable
     String searchResult;
@@ -21,8 +21,8 @@ public class FirefoxSelenium {
         // local variable
         int temp = 0;
 
-        FirefoxSelenium firefoxSelenium1 = new FirefoxSelenium();
-        FirefoxSelenium firefoxSelenium2 = new FirefoxSelenium();
+        FireFoxSelenium firefoxSelenium1 = new FireFoxSelenium();
+        FireFoxSelenium firefoxSelenium2 = new FireFoxSelenium();
 
         firefoxSelenium1.searchResult = "for instance firefoxSelenium1";
         firefoxSelenium2.searchResult = "for instance firefoxSelenium2";
@@ -36,7 +36,7 @@ public class FirefoxSelenium {
         System.out.println("######################################");
         System.out.println("######################################");
         System.out.println("Access class variable");
-        System.out.println(FirefoxSelenium.browser);
+        System.out.println(FireFoxSelenium.browser);
 
         // Array
         String[] searchResultLinks = new String[2];
