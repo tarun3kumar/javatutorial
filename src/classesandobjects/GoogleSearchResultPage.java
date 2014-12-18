@@ -1,17 +1,17 @@
 package classesandobjects;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
  */
 public class GoogleSearchResultPage {
 
-    private WebDriver webDriver;
+    private FirefoxDriver firefoxDriver;
 
     // Constructor
-    public GoogleSearchResultPage(final WebDriver webDriver) {
-        this.webDriver = webDriver;
+    public GoogleSearchResultPage(final FirefoxDriver firefoxDriver) {
+        this.firefoxDriver = firefoxDriver;
     }
 
     private static String testData1;

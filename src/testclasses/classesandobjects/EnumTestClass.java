@@ -1,11 +1,12 @@
-package testclasses;
+package testclasses.classesandobjects;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import classesandobjects.COUNTRY;
+import classesandobjects.Country;
 import classesandobjects.GoogleHomePage;
+import classesandobjects.ModifiedCountry;
 
 /**
  * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
@@ -21,7 +22,7 @@ public class EnumTestClass {
         firefoxDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    public void runTestOnGivenLocale(final COUNTRY country) {
+    public void runTestOnGivenLocale(final Country country) {
         switch (country) {
 
             case FRANCE :
@@ -47,6 +48,13 @@ public class EnumTestClass {
 
     }
 
+    public void searchCountryAttributes(final ModifiedCountry country) {
+        if (country.getLanguage().equals("English")) {
+            googleHomePage.search(firefoxDriver, country.getLanguage());
+            googleHomePage.search(firefoxDriver, country.getCapital());
+        }
+    }
+
     public void shutDownDriver() {
         firefoxDriver.close();
         firefoxDriver.quit();
@@ -56,12 +64,34 @@ public class EnumTestClass {
         EnumTestClass enumTestClass = new EnumTestClass();
         enumTestClass.firefoxDriver.get("http://www.google.com/");
 
-        COUNTRY country1 = COUNTRY.GERMANY;
+        System.out.println("######################");
+        System.out.println("######################");
+        System.out.println("Using valid test domain: Germany");
 
+        Country country1 = Country.GERMANY;
         enumTestClass.runTestOnGivenLocale(country1);
 
-        COUNTRY country2 = COUNTRY.UK;
+        System.out.println("######################");
+        System.out.println("######################");
+        System.out.println("using invalid test domain: UK");
+
+        Country country2 = Country.UK;
         enumTestClass.runTestOnGivenLocale(country2);
+
+        System.out.println("######################");
+        System.out.println("######################");
+        System.out.println("Iterating through values of enum");
+
+        for (Country country : Country.values()) {
+            System.out.println("Country is: " + country);
+        }
+
+        System.out.println("######################");
+        System.out.println("######################");
+        System.out.println("Test on modified country list");
+
+        ModifiedCountry country3 = ModifiedCountry.UK;
+        enumTestClass.searchCountryAttributes(country3);
 
         enumTestClass.shutDownDriver();
 
