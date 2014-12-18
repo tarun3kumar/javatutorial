@@ -66,6 +66,9 @@ public class TestClass {
 
     public void searchOnGoogleHomePage(final String testData) {
 
+        // invalid, an interface can not be instantiated since it is incomplete
+        // Page page = new Page();
+
         // assign object to type interface and not specific implementation
         Page googleHomePage = new GoogleHomePage(webDriver);
 
@@ -85,8 +88,16 @@ public class TestClass {
         System.out.println("########################################");
         System.out.println("calling method specific to GoogleSearchResultPage");
 
-        Page googleSearchResultPage = new GoogleSearchResultPage(webDriver);
-        return ((GoogleSearchResultPage) (googleSearchResultPage)).getResultSet();
+        Page page = new GoogleSearchResultPage(webDriver);
+        String searchResultStatistics = null;
+
+        // check if page is instance of GoogleSearchResultPage
+        if (page instanceof GoogleSearchResultPage) {
+            searchResultStatistics = ((GoogleSearchResultPage) (page)).getResultSet();
+        }
+
+        return searchResultStatistics;
+
     }
 
     public static void main(final String[] args) {
