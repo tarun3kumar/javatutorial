@@ -28,7 +28,7 @@ public class EnumTestClass {
                 System.out.println("Run selenium tests in France");
 
                 // Test run logic
-                googleHomePage.search(firefoxDriver, "Selenium user groups in france");
+                googleHomePage.search(firefoxDriver, "Selenium user groups in France");
                 break;
 
             case ITALY :
@@ -38,7 +38,7 @@ public class EnumTestClass {
 
             case GERMANY :
                 System.out.println("Run selenium tests in Germany");
-                googleHomePage.search(firefoxDriver, "Selenium user groups in France");
+                googleHomePage.search(firefoxDriver, "Selenium user groups in Germany");
                 break;
 
             default :
