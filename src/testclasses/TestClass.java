@@ -1,8 +1,11 @@
-package classesandobjects;
+package testclasses;
 
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import classesandobjects.GoogleHomePage;
+import classesandobjects.GoogleSearchResultPage;
 
 /**
  * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>

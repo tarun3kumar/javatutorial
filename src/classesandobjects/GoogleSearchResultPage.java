@@ -10,7 +10,7 @@ public class GoogleSearchResultPage {
     private WebDriver webDriver;
 
     // Constructor
-    GoogleSearchResultPage(final WebDriver webDriver) {
+    public GoogleSearchResultPage(final WebDriver webDriver) {
         this.webDriver = webDriver;
     }
 
