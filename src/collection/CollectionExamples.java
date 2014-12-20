@@ -51,7 +51,7 @@ public class CollectionExamples {
         Map<Integer, String> map = new HashMap<Integer, String>();
         map.put(1, "Web driver");
         map.put(2, "Selenium RC");
-        map.put(3, "Selenium Grd")
+        map.put(3, "Selenium Grd");
     }
 
 }

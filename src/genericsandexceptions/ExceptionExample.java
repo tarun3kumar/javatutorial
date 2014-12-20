@@ -29,7 +29,7 @@ public class ExceptionExample {
     }
 
     // specify the exception
-    public void writToFile() throws IOException {
+    public void writeToFile() throws IOException {
         PrintWriter out = new PrintWriter(new FileWriter("OutFile.txt"));
         System.out.println("Successfully written to file");
     }

@@ -14,7 +14,7 @@ public class Generic {
         arrayList1.add(1);
 
         // RunTimeException due to wrong casting
-        String str1 = (String) arrayList1.get(0);
+        // String str1 = (String) arrayList1.get(0);
 
         ArrayList<String> arrayList2 = new ArrayList<String>();
         arrayList2.add("software testing");
@@ -23,6 +23,7 @@ public class Generic {
         // arrayList2.add(1);
         // No explicit type casting is required
         String str2 = arrayList2.get(0);
+        System.out.println(str2);
 
     }
 
