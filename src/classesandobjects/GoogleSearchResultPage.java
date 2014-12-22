@@ -2,9 +2,6 @@ package classesandobjects;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class GoogleSearchResultPage {
 
     private FirefoxDriver firefoxDriver;

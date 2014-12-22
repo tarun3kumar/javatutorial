@@ -4,9 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class GoogleHomePage {
 
     // instance variable with private access specifier

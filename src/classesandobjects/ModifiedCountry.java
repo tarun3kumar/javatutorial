@@ -1,8 +1,5 @@
 package classesandobjects;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public enum ModifiedCountry {
 
     FRANCE("French", "Paris"),
