@@ -12,9 +12,6 @@ import interfaceandinheritance.GoogleHomePage;
 import interfaceandinheritance.GoogleSearchResultPage;
 import interfaceandinheritance.Page;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class TestClass {
 
     private WebDriver webDriver;

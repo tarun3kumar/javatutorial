@@ -3,9 +3,6 @@ package interfaceandinheritance;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class GoogleHomePage implements Page {
 
     // Using interface WebDriver and not a specific implementation

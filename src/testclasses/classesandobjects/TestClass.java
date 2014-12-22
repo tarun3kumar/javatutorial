@@ -7,9 +7,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import classesandobjects.GoogleHomePage;
 import classesandobjects.GoogleSearchResultPage;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class TestClass {
 
     public static void main(final String[] args) {

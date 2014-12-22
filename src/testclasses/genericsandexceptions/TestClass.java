@@ -4,9 +4,6 @@ import java.io.IOException;
 
 import genericsandexceptions.ExceptionExample;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class TestClass {
 
     public static void main(final String[] args) throws IOException {

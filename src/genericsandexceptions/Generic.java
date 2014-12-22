@@ -2,9 +2,6 @@ package genericsandexceptions;
 
 import java.util.ArrayList;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class Generic {
 
     public static void main(final String[] args) {

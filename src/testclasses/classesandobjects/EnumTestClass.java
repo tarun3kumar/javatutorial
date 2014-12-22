@@ -8,9 +8,6 @@ import classesandobjects.Country;
 import classesandobjects.GoogleHomePage;
 import classesandobjects.ModifiedCountry;
 
-/**
- * @author  tbhadauria <tarun.kumar.bhadauria@zalando.de>
- */
 public class EnumTestClass {
 
     private FirefoxDriver firefoxDriver;
