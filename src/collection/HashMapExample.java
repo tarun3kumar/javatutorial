@@ -14,6 +14,7 @@ public class HashMapExample {
         map.put(1, "Web driver");
         map.put(2, "Selenium RC");
         map.put(3, "Selenium Grid");
+        map.put(3, "selenium Remote control"); // duplicate key, hence map will store only this latest key
 
         // using base methods
         System.out.println("#############################");

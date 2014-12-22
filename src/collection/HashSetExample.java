@@ -15,7 +15,9 @@ public class HashSetExample {
         hashSet.add(1);
         hashSet.add(2);
         hashSet.add(2); // duplicate value but set with store it only once
-        hashSet.add(3);
+        hashSet.add(8);
+        hashSet.add(6);
+        hashSet.add(4);
 
         // using base methods
         System.out.println("#############################");
