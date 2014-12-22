@@ -10,20 +10,20 @@ public class TestClass {
         ExceptionExample exceptionExample = new ExceptionExample();
 
         // Throws run time exception because of division by 0
-        exceptionExample.divideAndDontHandleException(1, 0);
+       // exceptionExample.divideAndDontHandleException(1, 0);
 
         exceptionExample.divideAndHandleException(1, 0);
         System.out.println("Executed after exception");
 
         // handle the exception
         try {
-            exceptionExample.writToFile();
+            exceptionExample.writeToFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         // throw the exception
-        exceptionExample.writToFile();
+        exceptionExample.writeToFile();
 
     }
 
