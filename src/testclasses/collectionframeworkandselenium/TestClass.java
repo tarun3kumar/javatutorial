@@ -71,7 +71,7 @@ public class TestClass {
         // print test URLs
         for (Integer key : urlMap.keySet()) {
             System.out.println("key is: " + key);
-            System.out.println("value is: " + urlMap.get(key));
+            System.out.println("url value is: " + urlMap.get(key));
         }
 
         // shutdown driver
